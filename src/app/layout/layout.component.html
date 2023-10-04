@@ -1,0 +1,54 @@
+
+
+  <mat-toolbar class="custom-toolbar">
+      <div class="oval-image">
+        <span class="oval-container">
+          <img src="assets/eLibraryImage.png" alt="E-Library Image" height="27px" width="25px">
+
+        </span>
+      </div>
+      E-Library <br><br><br>
+      <p style="font-size:large" class="powered-by">Powered by Capgemini</p>
+     <div class="account" style="padding-left:70%" routerLink="/signout"><mat-icon>account_circle</mat-icon></div>
+  </mat-toolbar>
+  
+
+ 
+
+<div class="nav-bar" style="padding-top:1px">
+ <mat-sidenav-container>
+  <mat-sidenav mode="side" opened>
+  
+    <button mat-button class="menu-button" routerLink="/layout" [queryParams]="{ paramFlag: '1' }" routerLinkActive="active-route">
+      <mat-icon>dashboard</mat-icon>
+      <span>Dashboard</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/layout" [queryParams]="{ paramFlag: '2' }" routerLinkActive="active-route">
+      <mat-icon>search</mat-icon>
+      <span>Surf e-books</span>
+    </button>
+    <button mat-button class="menu-button" routerLink="/layout" [queryParams]="{ paramFlag: '3' }"routerLinkActive="active-route"> 
+      <mat-icon>help</mat-icon>
+      <span>Take Quiz</span>
+    </button>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div class="content mat-elevation-z4">
+      <div  *ngIf="paramFlag == 1">
+        <!-- <p>Dashboard works</p> -->
+        <app-dashboard></app-dashboard>
+    </div>
+    <div  *ngIf="paramFlag == 2">
+      <app-surf></app-surf>
+  </div>
+  <div  *ngIf="paramFlag == 3">
+    <p>quiz works</p>
+</div>
+
+
+  </div>
+  </mat-sidenav-content>
+</mat-sidenav-container> 
+
+</div>

@@ -1,0 +1,182 @@
+<!-- <section class="mt-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card shadow-lg"></div>
+                <img src="assets/img1.jpg" alt="jk" class="img-fluid" >
+
+                <div class="card-body">
+                    <p class="h3">Harry Potter</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+     
+</section> -->
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mb-3">
+        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
+      </div>
+    </div>
+    <div class="row" id="myItems">
+      <div class="col-sm-12 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card One</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Two</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+  
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Three</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card Four</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Five</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Six</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Seven</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">Card Eight</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some text.</p>
+          </div>
+        </div>      
+      </div>    
+    </div>
+  </div>
+  <script>
+      function myFunction() {
+    var input, filter, cards, cardContainer, h5, title, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h5.card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+  </script> -->
+
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mb-3">
+        <input type="text" [(ngModel)]="filterText" class="form-control" placeholder="Search for names.." (input)="filteredCards()">
+      </div>
+    </div>
+    <div class="row" id="myItems">
+      <div class="col-sm-12 mb-3">
+        <div class="card" *ngFor="let card of filteredCards">
+          <div class="card-body">
+            <h5 class="card-title"><a href="#">{{ card.title }}</a></h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">{{ card.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+   
+   <!-- <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mb-3">
+        <input type="text" [(ngModel)]="filterText" class="form-control" placeholder="Search for names.." (input)="filteredCards">
+      </div>
+    </div>
+    <div class="row" id="myItems">
+      <div class="col-sm-12">
+        <div class="card-deck">
+          <div class="card" *ngFor="let card of filteredCards">
+            <div class="card-body">
+              <h6 class="card-title"><a href="#">{{ card.title }}</a></h6>
+             
+              <img class="card-image" [src]="card.image" alt="{{ card.title }} Image">
+              <p class="card-text">{{ card.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->
+   <div class="container">
+    <div class="row">
+      <div class="col-sm-12 mb-3">
+        <input type="text" [(ngModel)]="filterText" class="form-control" placeholder="Search for names.." (input)="filteredCards">
+      </div>
+      <div class="col-sm-12 mb-3">
+        <input type="text" [(ngModel)]="categoryFilter" class="form-control" placeholder="Search for category.." (input)="filteredCards">
+      </div>
+      <div class="col-sm-12 mb-3">
+        <input type="text" [(ngModel)]="authorFilter" class="form-control" placeholder="Search for Author.." (input)="filteredCards">
+      </div>
+    </div>
+    <div class="row" id="myItems">
+      <div class="col-sm-12">
+        <div class="card-deck horizontal-cards"> <!-- Add a custom class 'horizontal-cards' -->
+          <div class="card" *ngFor="let card of filteredCards">
+            <div class="card-body">
+             <small> <p class="card-title"><a href="#">{{ card.title }}</a></p></small>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <div class="card-content">
+              <img class="card-image" [src]="card.image" alt="{{ card.title }} Image">
+              <p class="card-text">{{ card.text }}</p>
+              <a  class="card-link "href ="#" *ngIf="card.link">{{card.link}}</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

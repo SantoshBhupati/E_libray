@@ -1,0 +1,39 @@
+/* Adjusting icon size and color
+.navbar-nav .nav-link i {
+    font-size: 18px;
+    margin-right: 5px;
+    color: white;
+}
+
+/* Add spacing between menu items 
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Style for dropdown items 
+.dropdown-menu {
+    background-color: #001a33;
+}
+
+.dropdown-item {
+    color: white !important;
+}
+
+.dropdown-item:hover {
+    background-color: #17a2b8;
+    color: white !important;
+} */
+/* body{
+    background-size: cover;
+} */
+/* .bg-green{
+    background: #138d75;
+}
+.navbar-bg{
+    background-color: #34495e;
+}
+.top-65{
+    top: 65px !important;
+}
+ */
+/* shared-navigation.component.css */

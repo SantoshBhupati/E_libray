@@ -1,0 +1,164 @@
+.container {
+    /* display: flex;
+    flex-direction: column;
+    width: 900px;
+    margin: 0 auto; */
+  }
+  body{
+    font-size: 15px;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .box {
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: black;
+  }
+  .box_1{
+    /* flex: 1; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    color: black;
+  }
+  
+  .side_by_side {
+    display: flex;
+  }
+  
+  .Rounded_Circle {
+    border: 5px solid red;
+    border-radius: 50%;
+    padding: 20px;
+  }
+  
+  .Rounded_Circle_blue {
+    border: 5px solid rgb(93, 0, 255);
+    border-radius: 50%;
+    padding: 20px;
+  }
+  
+  h3 {
+    text-align: center;
+  }
+  
+  .Rounded_Circle_green {
+    border: 5px solid rgb(11, 251, 11);
+    border-radius: 50%;
+    padding: 20px;
+  }
+  
+  table {
+    border-collapse: collapse;
+    /* width: 50%; */
+    margin: 20px auto;
+  }
+  
+  th,
+  td {
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: gray;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgb(112, 111, 111);
+    color: white;
+  }
+  
+  tr:nth-child(odd) {
+    background-color: rgb(248, 244, 244);
+  }
+  
+  /* Adjust the width of the fourth box (table) */
+  .box_1:nth-child(1) {
+    width: 200px; 
+  }
+  
+  /* Adjust the width of the fifth box (empty) */
+  .box_1:nth-child(2) {
+    /* width: 600px; */
+    /* padding: 0%; */
+    flex: 2;
+    /* height: 800px; */
+  }
+  
+  .pie-chart {
+    margin-left: 110px;
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(
+        #007bff 0% 30%,    /* Sci-Fi 30% */
+        #ffc107 30% 50%,   /* Novels 20% */
+        #28a745 50% 60%,   /* Technical 10% */
+        #dc3545 60% 90%,   /* History 30% */
+        #17a2b8 90% 95%,   /* General 5% */
+        #6c757d 95% 100%  /* Other 5% */
+    );
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  /* .label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+  } */
+  .category-label {
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 5px;
+  }
+  
+  .square {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .scifi {
+    background-color: #007bff;
+  }
+  
+  .novels {
+    background-color: #ffc107;
+  }
+  
+  .technical {
+    background-color: #28a745;
+  }
+  
+  .history {
+    background-color: #dc3545;
+  }
+  
+  .general {
+    background-color: #17a2b8;
+  }
+  
+  .other {
+    background-color: #6c757d;
+  }
+  .side{
+    display: flex;
+    /* justify-content: space-around; */
+    margin-bottom: 15px;
+  }
+  .piechart_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

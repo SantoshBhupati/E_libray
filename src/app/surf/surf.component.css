@@ -1,0 +1,130 @@
+/* surf.component.css */
+
+/* surf.component.css */
+
+/* Style the container */
+/* .container {
+    padding: 20px;
+  }
+  
+  /* Style the search input 
+  .form-control {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  
+  .card-deck {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  
+  
+  .card {
+   
+    width: 300px;
+  height: 200px;
+  margin-right: 20px; 
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: transform 0.2s;
+    border-radius: 10%;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+ 
+  .card-title a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .card-title a:hover {
+    text-decoration: underline;
+  }
+  
+  .card-subtitle {
+    color: #777;
+  }
+  .card-image
+  {
+    height: 70px;
+    width: 70px;
+  }*/
+  
+  /* Apply these styles to the .horizontal-cards class */
+.horizontal-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* Adjust the gap between cards as needed */
+  gap: 15px; /* Example gap of 20px between cards */
+}
+
+/* Style individual cards */
+.card {
+ 
+  flex: 0 0 calc(33.33% - 20px); /* Adjust card width based on the number of columns and gap */
+  margin: auto;
+  height: 200px;
+  border: 1px solid #ccc;
+  background-color:#001a33;
+  transition: transform 0.2s;
+  border-radius: 10%;
+  color:azure;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Style card titles and links */
+.card-title a {
+  text-decoration: none;
+  color:white;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+.card-image {
+  height: 70px;
+  width: 70px;
+  margin-bottom: 10px;
+}
+.card-content
+{
+  display:flex;
+  /* align-items: center; */
+  align-items: flex-start;
+  flex-grow: 1;
+  margin-top: 10px; 
+}
+.card-text {
+  flex-grow: 1; 
+  text-align: center;
+  font-size: 16px; /* Adjust text size as needed */
+}
+.card-link
+{
+  margin-top: 10px; 
+  font-size: 20px;
+  text-align: center;
+}
+.row
+{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
+}
